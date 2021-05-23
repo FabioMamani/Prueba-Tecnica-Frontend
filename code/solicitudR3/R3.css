@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*font-family: 'Brygada 1918', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-menu {
+    max-width: 100%;
+    height: 120px;
+    background-color: #4cc9f0;
+    color: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container ul {
+    display: flex;
+}
+
+.nav-container li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #010101;
+    padding: 50px;
+}
+
+.nav-container li:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.container-home {
+    background-image: url(./assets/img/futbol2.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titular {
+    max-width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.container-titular h1 {
+    font-size: 36px;
+    font-family: 'Brygada 1918', serif;
+}
+
+
+/*########## SECCION DEL MODAL #############*/
+
+.container-modal {
+    max-width: 100%;
+    height: 500px;
+    /*background-color: darkseagreen;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contain-movie {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ############ RESPONSIVE ################*/
+
+@media screen and (min-width: 320px) and (max-width: 376px) {
+    .container-menu {
+        width: 100%;
+        height: auto;
+    }
+    .nav-container ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-container ul a {
+        border-bottom: 2px solid #000000;
+    }
+    .nav-container ul a:nth-child(4) {
+        border: none;
+    }
+    .container-modal {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contain-movie {
+        margin-top: 12px;
+        width: 100%;
+    }
+    .contain-details {
+        margin-top: 12px;
+    }
+    .contain-details h2 {
+        margin-bottom: 18px;
+    }
+    .contain-details p {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 575px) {
+    .container-menu {
+        width: 100%;
+        height: auto;
+    }
+    .nav-container ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-container ul a {
+        border-bottom: 2px solid #000000;
+    }
+    .nav-container ul a:nth-child(4) {
+        border: none;
+    }
+    .container-modal {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contain-movie {
+        margin-top: 12px;
+        width: 100%;
+    }
+    .contain-details {
+        margin-top: 12px;
+    }
+    .contain-details h2 {
+        margin-bottom: 18px;
+    }
+    .contain-details p {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+    .container-modal {
+        width: 100%;
+        height: 60vh;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contain-movie {
+        width: 90%;
+    }
+    .contain-details {
+        margin-top: 12px;
+    }
+    .contain-details h2 {
+        margin-bottom: 18px;
+    }
+    .contain-details p {
+        line-height: 1.5;
+    }
+}
